@@ -28,7 +28,7 @@
                 var localStorageLogin = localStorage.getItem( "login" );
                 event.preventDefault();
                 modalForm.classList.add( "modal-bounce" );
-                setTimeout( function () {
+                setTimeout( function() {
                     modalForm.classList.remove( "modal-bounce" );
                 }, 700 );
                 modalForm.classList.toggle( "hidden" );
@@ -47,7 +47,7 @@
                 console.log( modalMap );
                 modalMap.classList.toggle( "hidden" );
                 modalMap.classList.add( "modal-bounce" );
-                setTimeout( function () {
+                setTimeout( function() {
                     modalMap.classList.remove( "modal-bounce" );
                 }, 700 );
             } );
@@ -56,7 +56,6 @@
         form.addEventListener( "submit", function( event ) {
             var login = form.querySelector( "[name=login]" );
             var password = form.querySelector( "[name=password]" );
-
 
             console.log( login.value, password.value );
             if ( !login.value || !password.value ) {
